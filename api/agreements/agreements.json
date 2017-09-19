@@ -1,0 +1,57 @@
+[
+    {
+        "agreementId": 1,
+        "agreementProduct": "Leaf Rake",
+        "startDate": "March 19, 2016",
+        "endDate": "May 19, 2016",
+        "description": "Leaf rake with 48-inch wooden handle.",
+        "paymentType": "Weekly",
+        "amount": 19.95,
+        "status": "Active",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+    },
+    {
+        "agreementId": 2,
+        "agreementProduct": "Garden Cart",
+        "startDate": "June 18, 2015",
+        "endDate": "March 18, 2016",
+        "description": "15 gallon capacity rolling garden cart",
+        "paymentType": "Weekly",
+        "amount": 32.99,
+        "status": "Active",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+    },
+    {
+        "agreementId": 5,
+        "agreementProduct": "Hammer",
+        "startDate": "August 21, 2015",
+        "endDate": "May 21, 2016",
+        "description": "Curved claw steel hammer",
+        "paymentType": "Monthly",
+        "amount": 8.9,
+        "status": "Inactive",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+    },
+    {
+        "agreementId": 8,
+        "agreementProduct": "Saw",
+        "startDate": "May 15, 2016",
+        "endDate": "July 15, 2016",
+        "description": "15-inch steel blade hand saw",
+        "paymentType": "Weekly",
+        "amount": 11.55,
+        "status": "Inactive",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+    },
+    {
+        "agreementId": 10,
+        "agreementProduct": "Video Game Controller",
+        "startDate": "September 15, 2015",
+        "endDate": "October 15, 2015",
+        "description": "Standard two-button video game controller",
+        "paymentType": "Monthly",
+        "amount": 35.95,
+        "status": "Inactive",
+        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+    }
+]

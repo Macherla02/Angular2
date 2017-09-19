@@ -1,0 +1,50 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-2'>Filter by:</div>
+            <div class='col-md-4'>
+                <input type='text'/>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <h3>Filtered by: </h3>
+            </div>
+        </div>
+        <div class='table-responsive'>
+            <table class='table'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn btn-primary' (click)="toggleImage()">
+                                {{showImage?"Hide Image":"Show Image"}}
+                            </button>
+                        </th>
+                        <th>Agreement Id</th>
+                        <th>Agreement Product</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Payment Type</th>
+                        <th>Amount<th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+               <tbody>
+                   <tr *ngFor= "let agreement of agreements">
+                       <td><img *ngIf="showImage" [src]="agreement.imageUrl" [style.width.px]='imageWidth'></td>
+                       <td>{{agreement.agreementId}}</td>
+                       <td>{{agreement.agreementProduct}}</td>
+                       <td>{{agreement.startDate}}</td>
+                       <td>{{agreement.endDate}}</td>
+                       <td>{{agreement.paymentType}}</td>
+                       <td>{{agreement.amount}}</td>
+                       <td>{{agreement.status}}</td>
+                   </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+</div>
