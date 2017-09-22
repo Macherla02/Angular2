@@ -38,6 +38,9 @@ var AgreementListComponent = /** @class */ (function () {
     AgreementListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
+    AgreementListComponent.prototype.ngOnInit = function () {
+        console.log("This is Agreement OnInit");
+    };
     AgreementListComponent = __decorate([
         core_1.Component({
             selector: 'pm-agreement',

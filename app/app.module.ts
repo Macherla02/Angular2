@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { EmilyComponent } from './emily.component';
 import { AgreementListComponent } from './agreements/agreement-list.component';
+import { ProductListComponent } from './products/product-list.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { AgreementListComponent } from './agreements/agreement-list.component';
   declarations: [
     AppComponent,
     EmilyComponent,
-    AgreementListComponent
+    AgreementListComponent,
+    ProductListComponent
   ],
   bootstrap: [ AppComponent ]
 })

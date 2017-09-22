@@ -12,6 +12,7 @@ var ProductListComponent = /** @class */ (function () {
         this.pageTitle = "Product List";
         this.imageWidth = 50;
         this.showImage = false;
+        this.listFilter = 'Leaf';
         this.products = [
             {
                 "productId": 1,
@@ -47,6 +48,9 @@ var ProductListComponent = /** @class */ (function () {
     }
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
+    };
+    ProductListComponent.prototype.ngOnInit = function () {
+        console.log("This is Product OnInit");
     };
     ProductListComponent = __decorate([
         core_1.Component({

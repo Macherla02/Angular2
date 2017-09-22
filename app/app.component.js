@@ -13,7 +13,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
-            template: "<div><h1>This is Adi Mac</h1>\n\t<pm-emily></pm-emily><pm-agreement></pm-agreement></div>"
+            template: "<div><h1>This is Adi Mac</h1>\n\t<pm-emily></pm-emily><pm-product></pm-product><pm-agreement></pm-agreement></div>"
         })
     ], AppComponent);
     return AppComponent;

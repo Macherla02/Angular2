@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {IAgreement} from './agreement';
 
 @Component({
     selector:'pm-agreement',
@@ -9,7 +10,7 @@ export class AgreementListComponent{
     pageTitle:string="Agreement List";
     imageWidth:number=50;
     showImage:boolean =false;
-    agreements:any[]=   [{
+    agreements:IAgreement[]=   [{
         "agreementId": 1,
         "agreementProduct": "Leaf Rake",
         "startDate": "March 19, 2016",
@@ -34,5 +35,9 @@ export class AgreementListComponent{
 
     toggleImage(): void{
         this.showImage = !this.showImage;
+    }
+
+    ngOnInit(): void{
+        console.log("This is Agreement OnInit");
     }
 }

@@ -12,6 +12,7 @@ var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var emily_component_1 = require("./emily.component");
 var agreement_list_component_1 = require("./agreements/agreement-list.component");
+var product_list_component_1 = require("./products/product-list.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -24,7 +25,8 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 emily_component_1.EmilyComponent,
-                agreement_list_component_1.AgreementListComponent
+                agreement_list_component_1.AgreementListComponent,
+                product_list_component_1.ProductListComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         })
