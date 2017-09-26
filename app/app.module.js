@@ -13,6 +13,9 @@ var app_component_1 = require("./app.component");
 var emily_component_1 = require("./emily.component");
 var agreement_list_component_1 = require("./agreements/agreement-list.component");
 var product_list_component_1 = require("./products/product-list.component");
+var product_filter_pipe_1 = require("./products/product-filter.pipe");
+var agreement_filter_pipe_1 = require("./agreements/agreement-filter.pipe");
+var star_component_1 = require("./shared/star.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -26,7 +29,10 @@ var AppModule = /** @class */ (function () {
                 app_component_1.AppComponent,
                 emily_component_1.EmilyComponent,
                 agreement_list_component_1.AgreementListComponent,
-                product_list_component_1.ProductListComponent
+                product_list_component_1.ProductListComponent,
+                product_filter_pipe_1.ProductFilterPipe,
+                agreement_filter_pipe_1.AgreementFilterPipe,
+                star_component_1.StarComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         })

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {IAgreement} from './agreement';
+import {AgreementFilterPipe} from './agreement-filter.pipe'
 
 @Component({
     selector:'pm-agreement',

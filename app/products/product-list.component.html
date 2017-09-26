@@ -11,7 +11,7 @@
         </div>
         <div class='row'>
             <div class='col-md-6'>
-                <h3>Filtered by: {{ listFilter }}</h3>
+                <h3>Filtered by: {{ agrFilter }}</h3>
             </div>
         </div>
         <div class='table-responsive'>
@@ -32,7 +32,7 @@
                 
                 </thead>
                 <tbody>
-                    <tr *ngFor="let product of products">
+                    <tr *ngFor="let product of products|productFilter:listFilter">
                         <td>
                             <img *ngIf="showImage" [src]="product.imageUrl" [style.width.px]='imageWidth' >
                         </td> 
@@ -40,7 +40,7 @@
                         <td>{{product.productCode}}</td>
                         <td>{{product.releaseDate}}</td>
                         <td>{{product.price|currency:'USD':true}}</td>
-                        <td>{{product.starRating}}</td>
+                        <td><star-rating [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></star-rating></td>
                     </tr>
                 </tbody>
                
