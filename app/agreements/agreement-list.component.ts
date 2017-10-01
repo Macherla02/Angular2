@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {IAgreement} from './agreement';
-import {AgreementFilterPipe} from './agreement-filter.pipe'
+//import {AgreementFilterPipe} from './agreement-filter.pipe'
 
 @Component({
     selector:'pm-agreement',
@@ -11,7 +11,9 @@ export class AgreementListComponent{
     pageTitle:string="Agreement List";
     imageWidth:number=50;
     showImage:boolean =false;
-    agreements:IAgreement[]=   [{
+    ListAgreeFilter: string="Leaf";
+    agreements:IAgreement[]=[
+        {
         "agreementId": 1,
         "agreementProduct": "Leaf Rake",
         "startDate": "March 19, 2016",

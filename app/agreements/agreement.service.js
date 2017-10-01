@@ -7,15 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-//import {AgreementFilterPipe} from './agreement-filter.pipe'
-var AgreementListComponent = /** @class */ (function () {
-    function AgreementListComponent() {
-        this.pageTitle = "Agreement List";
-        this.imageWidth = 50;
-        this.showImage = false;
-        this.ListAgreeFilter = "Leaf";
-        this.agreements = [
-            {
+var AgreementService = /** @class */ (function () {
+    function AgreementService() {
+    }
+    AgreementService.prototype.getAgreements = function () {
+        return [{
                 "agreementId": 1,
                 "agreementProduct": "Leaf Rake",
                 "startDate": "March 19, 2016",
@@ -36,22 +32,12 @@ var AgreementListComponent = /** @class */ (function () {
                 "amount": 32.99,
                 "status": "Active",
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
-            }
-        ];
-    }
-    AgreementListComponent.prototype.toggleImage = function () {
-        this.showImage = !this.showImage;
+            }];
     };
-    AgreementListComponent.prototype.ngOnInit = function () {
-        console.log("This is Agreement OnInit");
-    };
-    AgreementListComponent = __decorate([
-        core_1.Component({
-            selector: 'pm-agreement',
-            templateUrl: 'app/agreements/agreement-list.component.html'
-        })
-    ], AgreementListComponent);
-    return AgreementListComponent;
+    AgreementService = __decorate([
+        core_1.Injectable()
+    ], AgreementService);
+    return AgreementService;
 }());
-exports.AgreementListComponent = AgreementListComponent;
-//# sourceMappingURL=agreement-list.component.js.map
+exports.AgreementService = AgreementService;
+//# sourceMappingURL=agreement.service.js.map

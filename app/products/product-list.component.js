@@ -52,6 +52,9 @@ var ProductListComponent = /** @class */ (function () {
     ProductListComponent.prototype.ngOnInit = function () {
         console.log("This is Product OnInit");
     };
+    ProductListComponent.prototype.onRatingClicked = function (message) {
+        this.pageTitle = 'Product List:' + message;
+    };
     ProductListComponent = __decorate([
         core_1.Component({
             selector: 'pm-product',

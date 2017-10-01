@@ -50,4 +50,8 @@ export class ProductListComponent{
     ngOnInit(): void{
         console.log("This is Product OnInit");
     }
+
+    onRatingClicked(message:string):void{
+        this.pageTitle = 'Product List:'+message;
+    }
 }

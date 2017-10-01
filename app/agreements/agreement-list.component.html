@@ -4,7 +4,7 @@
     </div>
     <div class='panel-body'>
         <div class='row'>
-            <div class='col-md-2'>Filter by:{{ ListAgreeFilter }}</div>
+            <div class='col-md-2'>Filter by:</div>
             <div class='col-md-4'>
                 <input type='text' [(ngModel)]='ListAgreeFilter'/>
             </div>
@@ -33,7 +33,7 @@
                     </tr>
                 </thead>
                <tbody>
-                   <tr *ngFor= "let agreement of agreements|agrFilter: ListAgreeFilter">
+                   <tr *ngFor= "let agreement of agreements|agrFilter:ListAgreeFilter">
                        <td><img *ngIf="showImage" [src]="agreement.imageUrl" [style.width.px]='imageWidth'></td>
                        <td>{{agreement.agreementId}}</td>
                        <td>{{agreement.agreementProduct}}</td>

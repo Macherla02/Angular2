@@ -18,7 +18,7 @@ var StarComponent = /** @class */ (function () {
         this.starWidth = this.rating * 86 / 5;
     };
     StarComponent.prototype.onClick = function () {
-        this.ratingClicked;
+        this.ratingClicked.emit("Rating Clicked is " + this.rating);
     };
     __decorate([
         core_1.Input(),
