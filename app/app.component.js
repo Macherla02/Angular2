@@ -7,13 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var agreement_service_1 = require("./agreements/agreement.service");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pm-app',
-            template: "<div><h1>This is Adi Mac</h1>\n\t<pm-emily></pm-emily><pm-product></pm-product><pm-agreement></pm-agreement></div>"
+            template: "<div><h1>This is Adi Mac</h1>\n\t<pm-emily></pm-emily><pm-product></pm-product><pm-agreement></pm-agreement></div>",
+            providers: [agreement_service_1.AgreementService]
         })
     ], AppComponent);
     return AppComponent;
